@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>eventos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style type="text/css">
+   body{
+    padding-left:  10%;
+     }
+  </style>
+  
+</head>
+<body>
+	<div class="container-fluid"> <!-- CONTENEDOR CAMPO Y MARCADOR -->
+		<div class="row"> <!-- fila campo + marcador -->
+
+      <div class="card-block">
+        <h2 class="sub-title">Crear oferta</h2>
+        <form>
+            
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Descripción</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" placeholder="Descripción....">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Tipo periocidad</label>
+                <div class="col-sm-8">
+                    <select id="id_tipoPeriodo" name="tipo" class="form-control" onchange="displayPeriocidad();">
+                            <option value="puntual">Puntual</option>
+                            <option value="periodico">Periódico</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div id="objEvento" class="form-group row">
+                <label class="col-sm-4 col-form-label">Periocidad</label>
+                <div class="col-sm-8">
+                    <select id="id_Periocidad" name="select" class="form-control" disabled="">
+                            <option value="semanal">Semanal</option>
+                            <option value="mensual">Mensual</option>
+                            <option value="trimestral">Trimestral</option>
+                            <option value="anual">Anual</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Precio</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+
+            <div id="demo" class="form-group row">
+                <label class="col-sm-4 col-form-label">Seleccionar nivel de opción</label>
+                <div class="col-sm-8">
+                    <select name="select" class="form-control">
+                            <option value="opt1">Opción 1</option>
+                            <option value="opt2">Opción 2</option>
+                            <option value="opt2">Opción 3</option>
+                            <option value="opt2">Opción 4</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">Vista preliminar oferta</button>
+        </form>
+     </div>
+		
+    </div> <!-- FIN fila campo + marcador -->
+  </div>
+	<script src="eventos.js"></script>
+</body>
+</html>
+
+
+
+
+
